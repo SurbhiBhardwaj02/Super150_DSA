@@ -17,7 +17,7 @@ public class MaximumCircularSum {
         if(sum==0)
         {
             return lsum;
-        }
+        }                                   //[5,-3,5]
         return Math.max(sum,lsum);
 
     }
@@ -29,7 +29,7 @@ public class MaximumCircularSum {
             prevsum += arr[i];
             ans = Math.max(ans, prevsum);
 
-            if (prevsum < 0) {
+            if (prevsum < 0) {      //[-3,-2,-3]
                 prevsum = 0;
             }
         }
